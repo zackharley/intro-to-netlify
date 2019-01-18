@@ -1,0 +1,29 @@
+{
+  "name": "intro-to-netlify",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "npm run client:build && npm run functions:build",
+    "client:serve": "vue-cli-service serve",
+    "client:build": "vue-cli-service build",
+    "client:lint": "vue-cli-service lint",
+    "functions:build": "netlify-lambda build functions/src",
+    "functions:serve": "netlify-lambda serve functions/src"
+  },
+  "dependencies": {
+    "unfurl.js": "^1.1.6",
+    "vue": "^2.5.21"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.3.0",
+    "@vue/cli-plugin-eslint": "^3.3.0",
+    "@vue/cli-service": "^3.3.0",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "netlify-lambda": "^1.2.0",
+    "prettier": "^1.15.3",
+    "vue-template-compiler": "^2.5.21"
+  }
+}
